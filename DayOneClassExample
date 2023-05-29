@@ -1,0 +1,35 @@
+public class DayOneClassExample {
+
+	String firstname;
+	String lastname;
+	
+	public String getNames() {
+		
+		String lv_firstname;
+
+		lv_firstname = this.firstname + " " + this.lastname;
+		return lv_firstname ; //iv_fn + " " + iv_ln;
+		
+	}
+
+	public void setName(String iv_fn,String iv_ln) {
+		
+		this.firstname = iv_fn;
+		this.lastname = iv_ln;
+	}
+
+	public static void main(String[] args) {
+		// DayOneClassExample
+		String lvname;
+		DayOneClassExample mce = new DayOneClassExample();
+
+		mce.setName("Ram ","Kumar"); 	
+
+		lvname = mce.getNames();
+
+		System.out.println("Name of the Employee - "+mce.getNames());
+		System.out.println("Name of the Employee lvname - "+lvname);
+	}
+
+}
+
